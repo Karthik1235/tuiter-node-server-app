@@ -1,7 +1,7 @@
 export default [
     {
         "_id": "123", "topic": "Space", "username": "SpaceX",
-        "handle": "@spacex", "time": "2h", "image": "spacex.png",
+        "handle": "spacex", "time": "2h", "image": "spacex.png",
         "title": "SpaceX's Mission",
         "tuit": "You want to wake up in the morning and think the future is going to be great - and "
                 + "that’s what being a spacefaring civilization is all about. It’s about believing in the future "
@@ -11,7 +11,7 @@ export default [
 },
 {
     "_id": "234", "topic": "Traffic", "username": "The Boring Company",
-    "handle": "@boringcompany", "time": "2h", "image": "boring2.jpg",
+    "handle": "boringcompany", "time": "2h", "image": "boring2.jpg",
     "title": "The Boring Company fixing traffic",
     "tuit": "The Boring Company (TBC) is an American infrastructure and tunnel construction "
             + "services company founded by Elon Musk. Its ongoing and proposed projects are "
