@@ -8,13 +8,13 @@ const createTuit = async (req, res) => {
     newTuit.retuits = 0;
     newTuit.verified = true;
     newTuit.dislikes = 0;
-    newTuit.image = "nasa_logo.png";
+    newTuit.image = "NASA_logo.png";
     newTuit.handle = "@nasa";
     newTuit.username = "NASA";
     newTuit.time = "now";
 
     const insertedTuit = await tuitsDao.createTuit(newTuit);
-
+    console.log(insertedTuit);
     res.json(insertedTuit);
 }
 
