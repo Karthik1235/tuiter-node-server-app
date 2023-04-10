@@ -14,7 +14,7 @@ const CONNECTION_STRING = process.env.DB_CONNECTION_STRING || 'mongodb://localho
 mongoose.connect(CONNECTION_STRING);
 
 TuitsController(app);
-HelloController(app)
-UserController(app)
+HelloController(app);
+UserController(app);
 
 app.listen(process.env.PORT || 4000);
