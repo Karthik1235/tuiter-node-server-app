@@ -9,21 +9,18 @@ const createTuit = async (req, res) => {
     newTuit.verified = true;
     newTuit.dislikes = 0;
     newTuit.image = "NASA_logo.png";
-    newTuit.handle = "@nasa";
+    newTuit.handle = "nasa";
     newTuit.username = "NASA";
     newTuit.time = "now";
-
+    print(newTuit.image);
     const insertedTuit = await tuitsDao.createTuit(newTuit);
-    console.log(insertedTuit);
     res.json(insertedTuit);
 }
-
 
 const findTuits = async (req, res) => {
     const tuits = await tuitsDao.findTuits()
     res.json(tuits);
 }
-
 
 
 const updateTuit = async (req, res) => {
